@@ -1,0 +1,17 @@
+.button {
+  border: {
+    radius: 50px;
+  };
+  font: {
+    size: 13px;
+    weight: bold;
+  }
+  background: #f0f1f5;
+  padding: 7px 12px 8px;
+  display: inline-block;
+
+  &.small {
+    padding: 6px 13px 7px;
+    font-size: 11px;
+  }
+}

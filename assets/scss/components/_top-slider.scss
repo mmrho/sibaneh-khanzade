@@ -1,0 +1,43 @@
+#top-slider {
+  padding: 0;
+  margin-top: 15px;
+
+  .item {
+    position: relative;
+
+    .category-box {
+      position: absolute;
+      right: 25px;
+      top: 15px;
+
+      a {
+        color: #fff;
+        font: {
+          size: 13px;
+          weight: 300;
+        }
+      }
+    }
+
+    img {
+      border-radius: 15px;
+    }
+
+    .title-box {
+      position: absolute;
+      width: 100%;
+      padding: 25px 20px 15px;
+      background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+      background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000', GradientType=0);
+      bottom: 0;
+      border-radius: 0 0 15px 15px;
+
+      a {
+        color: #fff;
+        font-size: 18px;
+      }
+    }
+  }
+}

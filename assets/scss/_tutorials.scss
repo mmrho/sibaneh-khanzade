@@ -1,0 +1,36 @@
+.tutorial {
+  .tutorial-carousel-p {
+    background: #fafafa;
+
+    .tutorial-carousel-panel {
+      margin: 0 auto;
+      padding: {
+        bottom: 20px;
+      }
+
+      .tutorial-carousel {
+        .item {
+          display: flex;
+
+          .content {
+            margin-left: 20px;
+
+            strong {
+              display: block;
+              margin-bottom: 20px;
+              margin-top: 10px;
+            }
+          }
+
+          .image {
+            max-width: 30%;
+          }
+        }
+
+        .owl-dots {
+          margin-top: 35px;
+        }
+      }
+    }
+  }
+}

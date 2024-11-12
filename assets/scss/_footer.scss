@@ -1,0 +1,44 @@
+#site-footer {
+  background: #f7f7f7;
+  border-top:1px solid #cdcdcd;
+  padding: 5px 10px 17px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1000000;
+  width: 100%;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    li {
+      text-align: center;
+      color: #a1a1a1;
+      line-height: 0;
+      cursor: pointer;
+      i {
+        font-size: 28px;
+        line-height: 0;
+        &:before {
+          margin: 0;
+        }
+        &.small {
+          font-size: 25px;
+          display: block;
+          margin-top: 4px;
+          margin-bottom: 2px;
+          padding-left: 4px;
+        }
+      }
+      p {
+        font-size: 13px;
+        margin-top: 12px;
+        margin-bottom: 0;
+      }
+
+      &.active {
+        color: $default_color;
+      }
+    }
+  }
+}

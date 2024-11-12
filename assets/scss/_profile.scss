@@ -1,0 +1,152 @@
+.profile {
+  .panel-title {
+    h1 {
+      font-weight: 500;
+    }
+  }
+
+  .avatar-box {
+    .avatar {
+      background: #f2f1f6;
+      float: left;
+      padding: 10px;
+      border-radius: 50px;
+    }
+  }
+
+  .profile-slider {
+    .item {
+      background: #f2f1f6;
+      text-align: center;
+      border-radius: 10px;
+      padding: 20px;
+      color: #000;
+
+      .information {
+        p {
+          margin-bottom: 5px;
+        }
+      }
+
+      .image {
+        img {
+          width: auto;
+          margin: 0 auto;
+        }
+      }
+
+      .add-credit {
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+
+        span {
+          color: $default_color;
+          font-size: 13px;
+          display: inline-block;
+        }
+
+        a {
+          display: inline-block;
+        }
+      }
+
+      &.contact-us {
+        .information {
+          p {
+            margin-bottom: 2px;
+          }
+        }
+
+        .image {
+          img {
+            max-width: 34.44%;
+          }
+        }
+
+        .contact-btn {
+          display: flex;
+
+          a {
+            display: inline-block;
+            color: $default_color;
+            background: #fff;
+            padding: 5px;
+            width: 100%;
+            margin-left: 10px;
+            border-radius: 10px;
+
+            i {
+              display: block;
+              font-size: 27px;
+              line-height: 0;
+            }
+          }
+        }
+      }
+
+      &.support-panel {
+        .information {
+          margin-bottom: 2px;
+        }
+
+        .status {
+          height: 96px;
+          position: relative;
+          max-width: 130px;
+          width: auto;
+          margin: 22px auto -14px;
+
+          .progress {
+            transform: rotate(-90deg);
+            position: absolute;
+
+            .progress__meter,
+            .progress__value {
+              fill: none;
+            }
+
+            &.day-progress {
+              top: -18px;
+              right: 25px;
+
+              .progress__value {
+                fill: #303030;
+              }
+            }
+
+            &.hour-progress {
+              right: 20px;
+              top: -10px;
+            }
+
+            &.minute-progress {
+              top: -37px;
+              right: 0;
+            }
+          }
+
+          .progress__meter {
+            fill: none;
+            stroke: #646464;
+            stroke-width: 1px;
+            stroke-dasharray: 2, 2;
+            stroke-linejoin: round;
+          }
+
+          .progress__value {
+            stroke-dasharray: 339;
+            stroke-dashoffset: 0;
+            stroke-linecap: round;
+          }
+        }
+      }
+    }
+  }
+
+  .links-panel {
+    background: #f2f1f6;
+    padding: 10px;
+    border-radius: 10px;
+  }
+}

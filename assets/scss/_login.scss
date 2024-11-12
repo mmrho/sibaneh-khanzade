@@ -1,0 +1,61 @@
+.login {
+  .sibaneh-form {
+    margin-top: 50px;
+    fieldset {
+      label {
+        display: block;
+        font: {
+          size: 13px;
+          weight: 500;
+        }
+        margin-bottom: 15px;
+      }
+
+      .input-icon {
+        background: $input_bg;
+        display: inline-block;
+        padding: 10px 0 7px;
+        border-radius: 0 5px 5px 0;
+        position: absolute;
+
+        i {
+          font-size: 35px;
+          line-height: 0;
+        }
+      }
+
+      .input {
+        text-align: center;
+      }
+
+      button[type="submit"] {
+        background: $submit_bg;
+        padding: 15px;
+        display: block;
+        width: 100%;
+        color: #fff;
+        border-radius: 5px;
+        margin-top: 10px;
+        border: none;
+        transition-duration: 0.3s;
+        font: {
+          weight: bold;
+          size: 17px;
+        }
+        &:hover {
+          background: $submit_bg_hover;
+        }
+      }
+    }
+  }
+
+  .links-panel {
+    margin-top: 50px;
+    text-align: center;
+    a {
+      font: {
+        size: 13px;
+      };
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@media (max-width: 320px) {
+  .button {
+    padding: 7px 8px 8px;
+  }
+
+  .panel-title .title h3 {
+    font-size: 19px;
+  }
+
+  .panel-title .search-panel form input::placeholder{
+    font-size: 13px;
+  }
+}
