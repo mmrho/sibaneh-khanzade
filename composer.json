@@ -1,0 +1,18 @@
+{
+    "name": "mohammadreza/sibaneh",
+    "autoload": {
+        "psr-4": {
+            "Mohammadreza\\Sibaneh\\": "src/"
+        },
+        "files": [
+            "inc/functions/theme-support.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "mmrho",
+            "email": "mmohammadrezaho@gmail.com"
+        }
+    ],
+    "require": {}
+}
