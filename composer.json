@@ -5,7 +5,8 @@
             "Mohammadreza\\Sibaneh\\": "src/"
         },
         "files": [
-            "inc/functions/theme-support.php"
+            "inc/functions/theme-support.php",
+            "inc/functions/wp-enqueue.php"
         ]
     },
     "authors": [
