@@ -20,11 +20,10 @@
 
 <header id="site-header" class="container">
     <div class="row panel-title justify-content-between">
-        <div class="title col-6 align-self-center">
-            <h3>برنامه ها</h3>
-        </div>
-        <div class="side search-box col-6">
-            <i class="icon-search"></i>
-        </div>
+      <?php 
+      require_once THEME_TEMPLATE . "layout/header/title.php";
+      require_once THEME_TEMPLATE . "layout/header/search-btn.php";
+      ?>
+        
     </div>
 </header>

@@ -6,7 +6,8 @@
         },
         "files": [
             "inc/functions/theme-support.php",
-            "inc/functions/wp-enqueue.php"
+            "inc/functions/wp-enqueue.php",
+            "inc/functions/theme-options.php"
         ]
     },
     "authors": [
