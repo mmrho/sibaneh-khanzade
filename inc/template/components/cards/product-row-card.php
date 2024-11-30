@@ -1,0 +1,12 @@
+<div class="row product-row justify-content-between">
+    <div class="image col-3">
+        <?php echo $product->get_image(); ?>
+    </div>
+    <div class="title col-5">
+        <strong><?php the_title(); ?></strong>
+    </div>
+    <div class="action col-4">
+        <a class="button" href="<?php the_permalink(); ?>"><?php echo number_format($product->get_price()). " " . get_woocommerce_currency_symbol(); ?></a>
+
+    </div>
+</div>
