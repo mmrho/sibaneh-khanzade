@@ -10,7 +10,7 @@ add_filter('woocommerce_get_image_size_gallery_thumbnail', function($size) {
     return array(
         'width' => 70,
         'height' => 70,
-        'crop' => true,
+        'crop' => 1, // Works exactly the same as true
     );
 });
 
@@ -25,4 +25,7 @@ function display_custom_sizes($sizes) {
     ));
 }
 add_filter('image_size_names_choose', 'display_custom_sizes');
+
+
+add_image_size('custom-crop', 800, 600, true); // Example dimensions with cropping
 */
