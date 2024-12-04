@@ -252,6 +252,155 @@ Redux::set_section(
 Redux::set_section(
     $opt_name,
     [
+        'title' => 'پنل اپلیکیشن‌های جدید',
+        'id' => 'software-page-new-apps',
+        'subsection' => true,
+        'fields'=> [
+            [
+                'id' => 'software-page-new-apps-status',
+                'type' => 'button_set',
+                'title' => 'وضعیت پنل اپلیکیشن‌های جدید',
+                'options' => [
+                    'enable' => 'فعال',
+                    'disable' => 'غیرفعال'
+                ],
+                'default' => 'disable'
+            ],
+            [
+                'id' => 'software-page-new-apps-section',
+                'type' => 'section',
+                'title' => 'فیلدهای اپلیکیشن‌های جدید',
+                'indent' => true,
+                'required' => ['software-page-new-apps-status', '=', 'enable'],
+            ],
+            [
+                'id' => 'software-page-new-apps-title',
+                'type' => 'text',
+                'title' => 'عنوان پنل',
+                'default' => 'اپلیکیشن‌های جدید',
+            ],
+            [
+                'id' => 'software-page-new-apps-more-btn-title',
+                'type' => 'text',
+                'title' => 'عنوان دکمه بیشتر',
+                'default' => 'بیشتر',
+            ],
+            [
+                'id' => 'software-page-new-apps-more-btn-link',
+                'type' => 'text',
+                'title' => 'لینک دکمه بیشتر',
+                'default' => '#',
+            ],
+            [
+                'id' => 'software-page-new-apps-type',
+                'type' => 'select',
+                'title' => 'نوع محتوا',
+                'options' => [
+                    '0' => 'جدیدترینها',
+                    '1' => 'تصادفی',
+                    '2' => 'دسته بندی های خاص',
+                    '3' => 'برچسب های خاص',
+                    '4' => 'محصولات دلخواه',
+                    '5' => 'محبوب ترینها',
+                    '6' => 'پرفروش ترینها',
+                 ],
+                'default' => '0'
+            ],
+            [
+                'id' => 'software-page-new-apps-categories',
+                'type' => 'select',
+                'title' => 'دسته بندی های خاص',
+                'select2' => 'true',
+                'ajax' => true,
+                'multi' => true,
+                'data' => 'categories',
+                'args' => [
+                    'taxonomy' => 'product_cat',
+                    'orderby' => 'name',
+                    'order' => 'ASC',
+                    'hide_empty' => false,
+                    'hierarchical' => true,
+                    'exclude' => '',
+                    'include' => '',
+                    'number' => '',
+                    'pad_counts' => false,
+                ],
+                'required' => ['software-page-new-apps-type', '=', '2'],
+
+            ],
+            [
+                'id' => 'software-page-new-apps-tags',
+                'type' => 'select',
+                'title' => 'برچسب های خاص',
+                'select2' => 'true',
+                'ajax' => true,
+                'multi' => true,
+                'data' => 'terms',
+                'args' => [
+                    'taxonomy' => 'product_tag',
+                    'hide_empty' => false,
+                  
+                ],
+                'required' => ['software-page-new-apps-type', '=', '3'],
+            ],
+            [
+                'id' => 'software-page-new-apps-products',
+                'type' => 'select',
+                'title' => 'محصولات دلخواه',
+                'select2' => 'true',
+                'ajax' => true,
+                'multi' => true,
+                'data' => 'posts',
+                'args' => [
+                    'post_type' => 'product',
+                    'post_status' => 'publish',
+                ],
+                'required' => ['software-page-new-apps-type', '=', '4'],
+            ],
+            [
+                'id' => 'software-page-new-apps-popular-products',
+                'type' => 'select',
+                'title' => 'محبوب ترینها',
+                'select2' => 'true',
+                'ajax' => true,
+                'multi' => true,
+                'data' => 'posts',
+                'args' => [
+                    'post_type' => 'product',
+                    'post_status' => 'publish',
+                    'meta_key' => 'total_sales',
+                    'orderby' => 'meta_value_num',
+                ],
+                'required' => ['software-page-new-apps-type', '=', '5'],
+            ],
+            [
+                'id' => 'software-page-new-apps-best-sellers',
+                'type' => 'select',
+                'title' => 'پرفروش ترینها',
+                'select2' => 'true',
+                'ajax' => true,
+                'multi' => true,
+                'data' => 'posts',
+                'args' => [
+                    'post_type' => 'product',
+                    'post_status' => 'publish',
+                    'meta_key' => 'total_sales',
+                    'orderby' => 'meta_value_num',
+                ],
+                'required' => ['software-page-new-apps-type', '=', '6'],
+            ],
+            [
+                'id' => 'software-page-new-apps-itemsinpage',
+                'type' => 'text',
+                'title' => 'تعداد نمایش در هر صفحه',
+                'default' => '5',
+            ]
+        ]
+    ]
+);
+Redux::set_section(
+    $opt_name,
+    [
         'title' => 'صفحه بازی',
         'id' => 'game-page',
     ]
