@@ -36,4 +36,4 @@ function ProductMetaSave($post_id)
     }
 }
 
-add_action('save_post', 'wbsProductMetaSave');
+add_action('save_post', 'ProductMetaSave');

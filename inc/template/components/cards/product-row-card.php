@@ -6,7 +6,6 @@
         <strong><?php the_title(); ?></strong>
     </div>
     <div class="action col-4">
-        <a class="button" href="<?php the_permalink(); ?>"><?php echo number_format($product->get_price()). " " . get_woocommerce_currency_symbol(); ?></a>
-
+        <a class="button" href="<?php the_permalink(); ?>"><?php echo $product->get_price() ? number_format($product->get_price()). " " . get_woocommerce_currency_symbol() : "رایگان"; ?></a>
     </div>
 </div>

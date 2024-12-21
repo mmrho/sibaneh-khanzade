@@ -1,5 +1,5 @@
 <?php
-if ((int)THEME_OPTIONS['software-page-new-apps-status'] === 1) {
+if (THEME_OPTIONS['software-page-new-apps-status'] === "enable") {
     ?>
     <div class="row panel-title has-border justify-content-between">
         <div class="title col-9">
@@ -15,7 +15,7 @@ if ((int)THEME_OPTIONS['software-page-new-apps-status'] === 1) {
             $args = [
                 'post_type' => 'product',
                 'post_status' => 'publish',
-                'posts_per_page' => THEME_OPTIONS['software-page-new-apps-itemsinpage'],
+                'posts_per_page' => THEME_OPTIONS['software-page-new-apps-itemsInPage'],
             ];
             switch (THEME_OPTIONS['software-page-new-apps-type']) {
                 case '1':
@@ -61,7 +61,6 @@ if ((int)THEME_OPTIONS['software-page-new-apps-status'] === 1) {
             wp_reset_postdata(); ?>
         </div>
     </div>
-    <!-- Product Section -->
     <?php
 }
 ?>
