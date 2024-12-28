@@ -7,6 +7,6 @@ define('THEME_OPTIONS', get_option('themeOptions'));
 const THEME_JS = THEME_ASSETS . 'js/',
 THEME_CSS = THEME_ASSETS . 'css/',
 THEME_COMPONENTS = THEME_TEMPLATE . 'components/',
-THEME_VERSION = '1.0';
+THEME_VERSION = '1.1';
 
 require_once "vendor/autoload.php";

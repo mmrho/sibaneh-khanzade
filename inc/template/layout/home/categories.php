@@ -6,8 +6,7 @@ if (THEME_OPTIONS['software-page-categories-status'] === "enable") {
       <h3><?php echo THEME_OPTIONS['software-page-categories-title']; ?></h3>
     </div>
     <div class="side link col-3 align-self-center">
-      <a
-        href="<?php echo THEME_OPTIONS['software-page-categories-more-btn-link']; ?>"><?php echo THEME_OPTIONS['software-page-categories-more-btn-title']; ?></a>
+      <a href="<?php echo THEME_OPTIONS['software-page-categories-more-btn-link']; ?>"><?php echo THEME_OPTIONS['software-page-categories-more-btn-title']; ?></a>
     </div>
   </div>
   <div class="container category-panel">

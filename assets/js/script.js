@@ -64,5 +64,13 @@ jQuery(function ($) {
             $('.search-panel').stop(true, true).fadeOut();
         }
     });
+    
+    body.on('submit', '#loginForm', function (){
+    const phone = $("input#mobile").val();
+    alert(phone);
+    console.log(phone);
+    return false;
+    });
 });
+
 

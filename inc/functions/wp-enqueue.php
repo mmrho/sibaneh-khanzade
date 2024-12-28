@@ -9,6 +9,7 @@ function wbs_enqueue_scripts() {
 
 
     wp_deregister_script('jquery');
+    wp_deregister_script('jquery-blockui');
     wp_register_script('jquery', includes_url() . 'js/jquery/jquery.js', array(), '3.7.1', true);
     wp_enqueue_script('jquery');
    

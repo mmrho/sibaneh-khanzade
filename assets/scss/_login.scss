@@ -1,6 +1,7 @@
-.login {
+.page-template-login {
   .sibaneh-form {
     margin-top: 50px;
+
     fieldset {
       label {
         display: block;
@@ -42,6 +43,7 @@
           weight: bold;
           size: 17px;
         }
+
         &:hover {
           background: $submit_bg_hover;
         }
@@ -52,6 +54,7 @@
   .links-panel {
     margin-top: 50px;
     text-align: center;
+
     a {
       font: {
         size: 13px;
