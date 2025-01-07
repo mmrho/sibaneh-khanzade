@@ -1,4 +1,6 @@
 <?php
+global $wpdb;
+define('WPDBPREFIX', $wpdb->prefix);
 define('THEME_ASSETS', get_template_directory_uri() . '/assets/');
 define('THEME_NODE', get_template_directory_uri() . '/node_modules/');
 define("THEME_IMG", get_template_directory_uri() . '/images/');

@@ -6,11 +6,16 @@
         },
         "files": [
             "class/WbsUtility.php",
+            "class/WbsVerification.php",
             "inc/functions/theme-support.php",
             "inc/functions/theme-options.php",
             "inc/functions/add-image-size.php",
             "inc/functions/product-meta-box.php",
-            "inc/functions/wp-enqueue.php"
+            "inc/functions/wp-enqueue.php",
+            "inc/functions/ajax.php",
+            "inc/functions/create-table.php",
+            "inc/functions/sms.php"
+           
         ]
     },
     "authors": [
